@@ -3,21 +3,25 @@
 Return boolean string as output, print true if all digits are different and false if there are repetitions.*/
 #include<stdio.h>
 int main(){
-    int n,x[12],r,i,r2;
-    printf("n=");
-    scanf("%d",&n);
-    for(i=0;n>0;i++,n=n/10){
-        r=n%10;
-        r2=(n/10)%10;
-        x[i+1]=r2;
-        x[i]=r;
-        for(i=0;i<12; ){
-            if(r2==x[i]){
-                printf("false");
+    long int i,j,flag=0,n,a[12];
+    scanf("%ld",&n);
+    for(i=0;n>0;n/=10,i++){
+        a[i]=n%10;
+    }
+
+    n=i;
+    for(i=0;i<=n;i++){
+        for(j=i+1;j<=n;j++){
+        if(a[i]==a[j]){
+                flag=1;
                 break;
             }
         }
-
     }
+    
+    if(flag==1)
+    printf("The number is unlucky.");
+    else
+    printf("The number is lucky.");
 
 }
