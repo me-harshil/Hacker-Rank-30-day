@@ -1,0 +1,2 @@
+)
+    // printf("%d ",c[index]);
