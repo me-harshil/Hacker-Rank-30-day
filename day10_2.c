@@ -16,28 +16,36 @@ Output:
     here there is no whose negative and positive format exi*/
 #include<stdio.h>
 int main(){
-    int n,a[100],i,max,j,flag=0;
+    int n,a[100],i,temp,j,flag=2;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     scanf("%d",&a[i]);
 
-max=a[0];
     for(i=0;i<n;i++){
-        if(a[i]==0)
-        flag=1;
-        else if(max<a[i])
-        max=a[i];
-        for(j=0;j<n;j++){
-            if(max=-a[j]&&max>a[i]){
-            max=a[j];
-            flag=1;
+        for(j=i;j<n;j++){
+            if(a[i]<a[j]){
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
             }
         }
     }
+    for(i=0;i<n;i++){
+        if(a[i]==0)
+        flag=0;
+        for(j=i;j<n;j++){
+            if(a[i]==(-a[j])){
+                flag=1;
+                break;
+            }
+        }
+        if(a[i]==(-a[j]))
+        break;
+    }
 if(flag==1)
-printf("%d",max);
+printf("%d",a[i]);
+else if(flag==2)
+printf("-1");
 else if(flag==0)
 printf("0");
-else
-printf("-1");
 }
