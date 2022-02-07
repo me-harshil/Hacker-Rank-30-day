@@ -39,7 +39,8 @@ Sample Output 0
 Sample Input 1
 4
 Sample Output 1
-24*/
+24
+*/
 #include<stdio.h>
 int main(){
     int n,i,fact=1;

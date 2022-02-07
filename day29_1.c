@@ -5,7 +5,8 @@ Sample Input 0
 5
 0 1 0 3 12
 Sample Output 0
-1 3 12 0 0*/
+1 3 12 0 0
+*/
 #include<stdio.h>
 int main(){
     int n,i,j,a[100],temp;

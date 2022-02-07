@@ -8,7 +8,6 @@ Sample Input 0
 2 3 31
 5 5 32
 Sample Output 0
-
 5*/
 #include<stdio.h>
 int main(){

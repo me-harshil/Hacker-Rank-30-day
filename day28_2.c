@@ -2,7 +2,6 @@
 
 Return the number of tasks that can be finished if one person can perform at most one task.
 Sample Input 0
-
 4
 4
 3 2 9 13

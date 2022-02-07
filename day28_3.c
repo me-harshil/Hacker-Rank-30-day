@@ -10,7 +10,8 @@ Output: "f"
 
 Example 3:
 Input: letters = ["c","f","j"], target = "d"
-Output: "f"*/
+Output: "f"
+*/
 #include<stdio.h>
 #include<string.h>
 int main(){

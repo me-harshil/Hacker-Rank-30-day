@@ -16,7 +16,8 @@ Explanation:
 
 There is only one item matching the given rule, which is ["computer","silver","lenovo"].
 
-Hint: You can use arrayList to store the input elements.*/
+Hint: You can use arrayList to store the input elements.
+*/
 #include<stdio.h>
 #include<string.h>
 int main(){
